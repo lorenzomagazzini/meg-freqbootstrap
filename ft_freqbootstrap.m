@@ -402,7 +402,8 @@ if findpeaks
         maxfreq_prctiter = NaN;
         maxfreq_winwidth = NaN;
         err = lasterror;
-        outboot.maxfreq_errormsg = err.message;
+%         outboot.maxfreq_errormsg = err.message;
+        cfg_boot.maxfreq_errormsg = err.message;
     end
 end
 if findtrghs
@@ -413,7 +414,8 @@ if findtrghs
         minfreq_prctiter = NaN;
         minfreq_winwidth = NaN;
         err = lasterror;
-        outboot.minfreq_errormsg = err.message;
+%         outboot.minfreq_errormsg = err.message;
+        cfg_boot.minfreq_errormsg = err.message;
     end
 end
 
